@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift",
+        "state": {
+          "branch": null,
+          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
+          "version": "6.5.0"
+        }
+      },
+      {
+        "package": "SKHTTPClient",
+        "repositoryURL": "https://github.com/kstefanou52/SKHTTPClient",
+        "state": {
+          "branch": "master",
+          "revision": "2c85a71718631f6ef633c0df1b650611ea3dbaeb",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
