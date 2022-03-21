@@ -5,9 +5,9 @@ import Foundation
 
 public extension HTTPClient {
     
-    func urlDataTask<T: Codable>(with request: URLRequest?) -> Observable<T> {
+    func urlDataTask<T: Codable, GenError: Codable>(with request: URLRequest?, errorType: GenError.Type) -> Observable<T> {
         return Observable.create { [weak self] observer in
-            let dataTask = self?.getURLDataTask(with: request, completion: { (response: T?, error: HTTPClientError<String>?) in
+            let dataTask = self?.getURLDataTask(with: request, completion: { (response: T?, error: HTTPClientError<GenError>?) in
                 if let response = response {
                     observer.on(.next(response))
                     observer.on(.completed)
